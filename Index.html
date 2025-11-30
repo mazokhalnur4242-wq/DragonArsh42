@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آرش ریحانی – ÐŘÂĞØŇÄřsħ 42</title>
+<style>
+body {
+  margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif;
+  background: #000; color: #fff; overflow-x: hidden;
+}
+.container {
+  max-width: 900px; margin: auto; padding: 40px;
+  background: rgba(0,0,0,0.95); border: 2px solid #ffd700;
+  border-radius: 15px; position: relative; overflow: hidden;
+}
+.pulse-bg {
+  position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(255,215,0,0.05) 0%, transparent 70%);
+  animation: pulse 0.0233s infinite;
+  z-index: 0;
+}
+@keyframes pulse {
+  0%,100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.1); opacity: 0.6; }
+}
+.content { position: relative; z-index: 1; }
+.header { text-align: center; margin-bottom: 40px; }
+.brand { font-size: 18px; color: #ff6600; letter-spacing: 3px; font-weight: bold; }
+.name { font-size: 48px; color: #ffd700; font-weight: bold; text-shadow: 0 0 20px #ffd700; }
+.subtitle { font-size: 20px; color: #ff6666; margin-bottom: 20px; }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.skill-card { background: rgba(255,215,0,0.05); border: 1px solid #ffd700; border-radius: 10px; padding: 20px; transition: all 0.3s; }
+.skill-card:hover { background: rgba(255,215,0,0.15); transform: translateY(-5px); box-shadow: 0 5px 20px rgba(255,215,0,0.3); }
+.skill-title { font-size: 20px; color: #ff6666; font-weight: bold; margin-bottom: 12px; }
+.skill-list { list-style: none; padding-right: 20px; position: relative; }
+.skill-list li { position: relative; margin: 8px 0; }
+.skill-list li::before { content:'▸'; position: absolute; right:0; color:#ffd700; font-weight:bold; }
+.experience-item { background: rgba(255,102,102,0.05); border-right:4px solid #ff6666; padding:20px; margin-bottom:20px; border-radius:8px; }
+.experience-title { font-size:22px; color:#ff6666; font-weight:bold; margin-bottom:8px; }
+.experience-list { list-style: none; padding-right: 20px; position: relative; }
+.experience-list li { position: relative; margin: 10px 0; }
+.experience-list li::before { content:'✓'; position:absolute; right:0; color:#00ff00; font-weight:bold; }
+.cta-box { background: linear-gradient(135deg, #ffd700 0%, #ff6600 100%); color:#000; padding:30px; border-radius:15px; text-align:center; box-shadow:0 10px 30px rgba(255,215,0,0.4); margin-top:40px; }
+.download-btn { background:#000; color:#ffd700; padding:15px 40px; border-radius:50px; border:2px solid #ffd700; cursor:pointer; font-weight:bold; transition: all 0.3s; }
+.download-btn:hover { background:#ffd700; color:#000; transform:scale(1.05); box-shadow:0 5px 20px rgba(255,215,0,0.5); }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="pulse-bg"></div>
+  <div class="content">
+    <div class="header">
+      <div class="brand">ÐŘÂĞØŇÄřsħ 42</div>
+      <h1 class="name">آرش ریحانی</h1>
+      <div class="subtitle">توسعه‌دهنده، طراح، تولیدکننده محتوا | شرافت کاری و تخصص در یک خط</div>
+    </div>
+
+    <div class="section">
+      <h2 class="skill-title">مهارت‌ها و شرافت کاری</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-title">وردپرس</div>
+          <ul class="skill-list">
+            <li>ساخت و ویرایش صفحات فروشگاهی</li>
+            <li>مدیریت محصولات و دسته‌بندی‌ها</li>
+            <li>نصب و پیکربندی افزونه‌ها و قالب‌ها</li>
+            <li>رفع خطاها و مشکلات رایج</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-title">PHP & Backend</div>
+          <ul class="skill-list">
+            <li>افزودن امکانات سفارشی به قالب‌ها</li>
+            <li>کار با هوک‌ها و اکشن‌های وردپرس</li>
+            <li>اصلاح باگ‌ها و افزایش کارایی سایت</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-title">گرافیک & فتوشاپ</div>
+          <ul class="skill-list">
+            <li>طراحی بنر و تصویر محصول</li>
+            <li>ویرایش حرفه‌ای تصاویر</li>
+            <li>طراحی محتوا برای شبکه‌های اجتماعی</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-title">تولید محتوا & سئو</div>
+          <ul class="skill-list">
+            <li>نوشتن متن‌های فروش‌محور و تبلیغاتی</li>
+            <li>بهینه‌سازی صفحات و محصولات</li>
+            <li>بازنویسی محتوای موجود برای جذب فوری مشتری</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="skill-title">تجربه کاری</h2>
+      <div class="experience-item">
+        <div class="experience-title">پشتیبان و توسعه‌دهنده سایت</div>
+        <ul class="experience-list">
+          <li>ساخت و ویرایش صفحات و محصولات</li>
+          <li>تولید محتوای پول‌آفرین و لحظه‌ای</li>
+          <li>مدیریت روزانه پنل و ارائه گزارش دقیق</li>
+          <li>کار با ابزارهای وردپرس، PHP و فتوشاپ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <div>«مهارت و شرافت کاری من = تحویل فوری و اثر پول‌آفرین»</div>
+      <button class="download-btn" onclick="window.print()">📥 دانلود PDF</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
